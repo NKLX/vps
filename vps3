@@ -1,26 +1,28 @@
-getgenv().Settings = {
+getgenv().Settings = {        
     FPSLimit = 3,
-    UseEventEggs = false,
-    Notifications = {
-        ["Webhook"] = "https://discord.com/api/webhooks/1298843589635211385/thTpSJjhESBNk5wqtXUWhYrtOlexgvO6WI9MocSrGBueD2Y_cmIeUk-_M5KGvKD_aje2",
-        ["Discord ID"] = "683191935623495686",
-        ["Difficulty"] = "Above 100m",
-        ["Rarities"] = {"Secret", "Exclusive", "Celestial", "Superior", "Divine"},
-        --// Difficulty & Rarity don't work together, customize how you feel. --
+    ["Notifications"] = {
+        Webhook = "https://discord.com/api/webhooks/1298843589635211385/thTpSJjhESBNk5wqtXUWhYrtOlexgvO6WI9MocSrGBueD2Y_cmIeUk-_M5KGvKD_aje2",
+        DiscordID = "683191935623495686",
+        Difficulty = "Above 100m",
+        Rarities = {"Divine", "Secret", "Exclusive", "Celestial", "Superior"},
+        --// Difficulty & Rarity don't work together, customize how you feel. \\--
     },
-    Mailing = {
-        ["Usernames"] = {"hirai048x"},
-        Pets = {
-            ["Keep Best Pets"] = false,
-            ["Difficulty"] = "Above 25m",
-            ["Rarities"] = {"Secret", "Exclusive", "Celestial", "Superior", "Divine"},
-            --// Difficulty & Rarity don't work together, customize how you feel. --
+    ["Mailing"] = {
+        Usernames = {"hirai048x"},
+        ["Pets"] = {
+            KeepBestPets = true,
+            Difficulty = "Above 25m",
+            Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior"},
+            --// Difficulty & Rarity don't work together, customize how you feel. \\--
         },
-        Misc = {
-            ["Send Instant Luck 4"] = {Enabled = false, Min = 3},
-            ["Send Exclusive Fishing Items"] = {Enabled = true, Min = 20},
-            ["Send Crafted Keys"] = {SendCrystal = true, SendSecret = true, CrystalMin = 5, SecretMin = 3},
-            --// Only the first account listed will receive these items. --
+        ["Misc"] = {
+            ["Send Instant Luck 4"] = {Active = false, Minimum = 1},
+            ["Send Exclusive Fishing Items"] = {Active = true, Minimum = 1},
+            ["Send Keys"] = {
+                ["Crystal"] = {Active = true, Minimum = 5, Parts = {UpperMinimum = 3, LowerMinimum = 5}},
+                ["Secret"] = {Active = true, Minimum = 2},
+            },
+            --// Only the first account listed will receive these items. \\--
         }
     }
 }
