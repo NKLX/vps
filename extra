@@ -1,12 +1,5 @@
-script_key="QZInoQcTAFyujYcLPztFZPZyvepvXoCi";
-
-getgenv().ps99Config = {
-    -- General Config
-    HIDE_NAME = false,
-    DISCORD_ID = "683191935623495686",
-
-    -- Mail Config
-    USERNAME_TO_MAIL = "nklx64",
-    MAILING_WEBHOOK_URL = "https://discord.com/api/webhooks/1221707846052216954/VMHH_Vk1zWlouYJcmF8JAGZEV-o4lu35obGTac9BwG2qnyDW7piwG6UFMJSx3DrtnfEm",
+getgenv().Config = {
+    ["Webhook"] = "https://discord.com/api/webhooks/1221707846052216954/VMHH_Vk1zWlouYJcmF8JAGZEV-o4lu35obGTac9BwG2qnyDW7piwG6UFMJSx3DrtnfEm",
+    ["UserID"] = "683191935623495686",
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/627e09df17480561c1878d1537a1b612.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/563a4a1c759a83a84ed00822b66756a9.lua"))()
