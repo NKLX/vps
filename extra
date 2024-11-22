@@ -1,10 +1,11 @@
 getgenv().Settings = {        
     FPSLimit = 3,
+    CraftInsta4PotionsSoICanSellThem = false,
     ["Notifications"] = {
         Webhook = "https://discord.com/api/webhooks/1298843589635211385/thTpSJjhESBNk5wqtXUWhYrtOlexgvO6WI9MocSrGBueD2Y_cmIeUk-_M5KGvKD_aje2",
         DiscordID = "683191935623495686",
         Difficulty = "Above 100m",
-        Rarities = {"Divine", "Secret", "Exclusive", "Celestial", "Superior"},
+        Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior"},
         --// Difficulty & Rarity don't work together, customize how you feel. \\--
     },
     ["Mailing"] = {
@@ -17,17 +18,14 @@ getgenv().Settings = {
         },
         ["Misc"] = {
             ["Send Instant Luck 4"] = {Active = false, Minimum = 1},
+            ["Send God Potions"] = {Active = true, Minimum = 1},
             ["Send Exclusive Fishing Items"] = {Active = true, Minimum = 1},
             ["Send Keys"] = {
-                ["Crystal"] = {Active = true, Minimum = 5, Parts = {UpperMinimum = 3, LowerMinimum = 5}},
-                ["Secret"] = {Active = true, Minimum = 2},
+                ["Crystal"] = {Active = true, Minimum = 20, Parts = {UpperMinimum = 10, LowerMinimum = 10}},
+                ["Secret"] = {Active = true, Minimum = 1},
             },
             --// Only the first account listed will receive these items. \\--
         }
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()
-
-while wait() do
-    game:GetService("ReplicatedStorage").Network["ForeverPacks: Claim Free"]:InvokeServer("Default")
-end
