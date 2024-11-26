@@ -9,7 +9,7 @@ getgenv().Settings = {
         --// Difficulty & Rarity don't work together, customize how you feel. \\--
     },
     ["Mailing"] = {
-        Usernames = {"hirai048x"},
+        Usernames = {""},
         ["Pets"] = {
             KeepBestPets = false,
             Difficulty = "Above 25m",
