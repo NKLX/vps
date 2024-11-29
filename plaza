@@ -32,7 +32,7 @@ getgenv().Settings = {
     Seller = {
         Active = true,
         Items = {
-            ["All Rarity: Exclusive"] = {Class = "Pet", Price = "-10%"}, --// 20% above or less of RAP.
+            ["All Rarity: Exclusive"] = {Class = "Pet", Price = "-5%"}, --// 20% above or less of RAP.
             ["All Rarity: Celestial"] = {Class = "Pet", Price = "-10%"}, --// Normal RAP.
             ["All Rarity: Divine"] = {Class = "Pet", Price = "-10%"}, --// Normal RAP.
             ["All Rarity: Superior"] = {Class = "Pet", Price = "-10%"}, --// Normal RAP.
