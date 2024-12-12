@@ -34,10 +34,8 @@ getgenv().Settings = {
         Items = {
             ["All Rarity: Exclusive"] = {Class = "Pet", Price = "-5%"}, --// 20% above or less of RAP.
             ["All Rarity: Celestial"] = {Class = "Pet", Price = "-10%"}, --// Normal RAP.
-            ["All Rarity: Divine"] = {Class = "Pet", Price = "-10%"}, --// Normal RAP.
             ["All Rarity: Superior"] = {Class = "Pet", Price = "-10%"}, --// Normal RAP.
             ["All Rarity: Secret"] = {Class = "Pet", Price = "-5%"}, --// Normal RAP.
-            ["All Rarity: Exotic"] = {Class = "Pet", Price = "-10%"}, --// 20% above or less of RAP.
             ["Crystal Key"] = {Class = "Misc", Price = "-10%", AllTiers = true},
         },
         Serverhop = {
